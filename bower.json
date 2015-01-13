@@ -27,5 +27,8 @@
     "jquery-simulate": "https://raw.github.com/jquery/jquery-simulate/master/jquery.simulate.js",
     "ember-canary": "http://builds.emberjs.com/canary/ember.js",
     "ic-styled": "~1.1.6"
+  },
+  "resolutions": {
+    "ember": ">= 1.8.1 < 2.0.0"
   }
 }
