@@ -14,18 +14,18 @@
 
 {{#ic-tabs selected-index=selectedTabIndex}}
   {{#ic-tab-list}}
-    {{#each tabs}}
+    {{#each tab in tabs}}
       {{#ic-tab}}
-        <b>{{name}}</b>
-        <button {{action "removeTab" this}}>×</button>
+        <b>{{tab.name}}</b>
+        <button {{action "removeTab" tab}}>×</button>
       {{/ic-tab}}
     {{/each}}
     <button {{action "editNewTab"}}>add a tab</button>
   {{/ic-tab-list}}
 
-  {{#each tabs}}
+  {{#each tab in tabs}}
     {{#ic-tab-panel}}
-      <p>{{description}}</p>
+      <p>{{tab.description}}</p>
     {{/ic-tab-panel}}
   {{/each}}
 {{/ic-tabs}}
