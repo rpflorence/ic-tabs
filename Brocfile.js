@@ -1,6 +1,6 @@
 var mergeTrees = require('broccoli-merge-trees'),
     moduleFilter = require('broccoli-dist-es6-module'),
-    templateFilter = require('broccoli-ember-hbs-template-compiler');
+    templateFilter = require('ember-cli-htmlbars');
 
 var templates = templateFilter('lib');
 
