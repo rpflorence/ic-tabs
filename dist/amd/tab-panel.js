@@ -83,18 +83,6 @@ define(
       }.property('tab.active'),
 
       /**
-       * Shows or hides this panel depending on whether or not its active.
-       *
-       * @method toggleVisibility
-       * @private
-       */
-
-      toggleVisibility: function() {
-        var display = this.get('active') ? '' : 'none';
-        this.$().css('display', display);
-      }.observes('active'),
-
-      /**
        * Registers with the TabsComponent.
        *
        * @method registerWithTabs
