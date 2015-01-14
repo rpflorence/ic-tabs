@@ -1,7 +1,10 @@
 ic-tabs,
-ic-tab-list,
+ic-tab-list {
+  display: block;
+}
+
 ic-tab-panel {
-  display: block
+  display: none;
 }
 
 ic-tab-list {
@@ -48,5 +51,9 @@ ic-tab:focus:before {
 
 ic-tab:focus:after {
   right: -4px;
+}
+
+ic-tab-panel.active {
+  display: block;
 }
 
